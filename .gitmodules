@@ -1,0 +1,6 @@
+[submodule "frosting/vnd/Detours"]
+	path = frosting/vnd/Detours
+	url = https://github.com/Microsoft/Detours
+[submodule "frosting/vnd/wil"]
+	path = frosting/vnd/wil
+	url = https://github.com/Microsoft/wil
