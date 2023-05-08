@@ -40,6 +40,7 @@
             this.lblExStatus = new System.Windows.Forms.Label();
             this.btnInstall = new System.Windows.Forms.Button();
             this.pnlDivider = new System.Windows.Forms.Panel();
+            this.lleSupport = new FrostingCfg.LinkLabelEx();
             this.gbMultiMon.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -172,6 +173,21 @@
             this.pnlDivider.Size = new System.Drawing.Size(337, 1);
             this.pnlDivider.TabIndex = 3;
             // 
+            // lleSupport
+            // 
+            this.lleSupport.ActiveLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(194)))), ((int)(((byte)(255)))));
+            this.lleSupport.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
+            this.lleSupport.AutoSize = true;
+            this.lleSupport.LinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.lleSupport.Location = new System.Drawing.Point(6, 225);
+            this.lleSupport.Name = "lleSupport";
+            this.lleSupport.Size = new System.Drawing.Size(202, 13);
+            this.lleSupport.TabIndex = 9;
+            this.lleSupport.TabStop = true;
+            this.lleSupport.Text = "Like the project? You can support it here.";
+            this.lleSupport.VisitedLinkColor = System.Drawing.Color.FromArgb(((int)(((byte)(153)))), ((int)(((byte)(235)))), ((int)(((byte)(255)))));
+            this.lleSupport.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lleSupport_LinkClicked);
+            // 
             // MainForm
             // 
             this.AcceptButton = this.btnApply;
@@ -179,6 +195,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
             this.ClientSize = new System.Drawing.Size(356, 253);
+            this.Controls.Add(this.lleSupport);
             this.Controls.Add(this.gbMultiMon);
             this.Controls.Add(this.pnlDivider);
             this.Controls.Add(this.lblGroupingMode);
@@ -215,6 +232,7 @@
         private System.Windows.Forms.Label lblExStatus;
         private System.Windows.Forms.Button btnInstall;
         private System.Windows.Forms.Panel pnlDivider;
+        private LinkLabelEx lleSupport;
     }
 }
 

@@ -100,6 +100,11 @@ namespace FrostingCfg
             RegistrySettings.Update(ns);
         }
 
+        private void lleSupport_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            System.Diagnostics.Process.Start("https://www.paypal.me/tfwboredom");
+        }
+
         private unsafe void MainForm_HandleCreated(object sender, EventArgs e)
         {
             UxTheme.SetPreferredAppMode(1);

@@ -23,3 +23,8 @@ The code fixing various broken or incomplete functions of the OS is located in t
 # Todos
 - [ ] Arm64 support
 - [ ] Fix icon and title desync if possible
+
+# Support
+If you like this kind of project and would like to see more, any support is greatly appreciated.
+
+You can donate through PayPal.me [here](https://www.paypal.me/tfwboredom) or use GitHub Sponsors in the sidebar.
