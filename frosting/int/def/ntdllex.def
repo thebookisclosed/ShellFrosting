@@ -1,0 +1,5 @@
+LIBRARY NTDLL
+EXPORTS
+RtlQueryFeatureConfiguration
+RtlSubscribeWnfStateChangeNotification
+RtlUnsubscribeWnfStateChangeNotification
