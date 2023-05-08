@@ -34,19 +34,22 @@
             this.gbMultiMon = new System.Windows.Forms.GroupBox();
             this.cbMultiMon = new System.Windows.Forms.CheckBox();
             this.cbxSecondaryMonitorsGroupingMode = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblMMGroupingMode = new System.Windows.Forms.Label();
             this.btnApply = new System.Windows.Forms.Button();
+            this.lblExtension = new System.Windows.Forms.Label();
+            this.lblExStatus = new System.Windows.Forms.Label();
+            this.btnInstall = new System.Windows.Forms.Button();
+            this.pnlDivider = new System.Windows.Forms.Panel();
             this.gbMultiMon.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblGroupingMode
             // 
             this.lblGroupingMode.AutoSize = true;
-            this.lblGroupingMode.Location = new System.Drawing.Point(8, 15);
-            this.lblGroupingMode.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblGroupingMode.Location = new System.Drawing.Point(6, 53);
             this.lblGroupingMode.Name = "lblGroupingMode";
-            this.lblGroupingMode.Size = new System.Drawing.Size(107, 16);
-            this.lblGroupingMode.TabIndex = 0;
+            this.lblGroupingMode.Size = new System.Drawing.Size(87, 13);
+            this.lblGroupingMode.TabIndex = 4;
             this.lblGroupingMode.Text = "Taskbar &buttons:";
             // 
             // cbxGroupingMode
@@ -57,20 +60,18 @@
             "Always combine, hide labels",
             "Combine when taskbar is full",
             "Never combine"});
-            this.cbxGroupingMode.Location = new System.Drawing.Point(124, 11);
-            this.cbxGroupingMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxGroupingMode.Location = new System.Drawing.Point(99, 50);
             this.cbxGroupingMode.Name = "cbxGroupingMode";
-            this.cbxGroupingMode.Size = new System.Drawing.Size(298, 24);
-            this.cbxGroupingMode.TabIndex = 1;
+            this.cbxGroupingMode.Size = new System.Drawing.Size(239, 21);
+            this.cbxGroupingMode.TabIndex = 5;
             // 
             // cbShowLabels
             // 
             this.cbShowLabels.AutoSize = true;
-            this.cbShowLabels.Location = new System.Drawing.Point(12, 50);
-            this.cbShowLabels.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbShowLabels.Location = new System.Drawing.Point(9, 81);
             this.cbShowLabels.Name = "cbShowLabels";
-            this.cbShowLabels.Size = new System.Drawing.Size(196, 20);
-            this.cbShowLabels.TabIndex = 2;
+            this.cbShowLabels.Size = new System.Drawing.Size(158, 17);
+            this.cbShowLabels.TabIndex = 6;
             this.cbShowLabels.Text = "Show labels on taskbar &pins";
             this.cbShowLabels.UseVisualStyleBackColor = true;
             // 
@@ -78,25 +79,22 @@
             // 
             this.gbMultiMon.Controls.Add(this.cbMultiMon);
             this.gbMultiMon.Controls.Add(this.cbxSecondaryMonitorsGroupingMode);
-            this.gbMultiMon.Controls.Add(this.label3);
+            this.gbMultiMon.Controls.Add(this.lblMMGroupingMode);
             this.gbMultiMon.ForeColor = System.Drawing.Color.White;
-            this.gbMultiMon.Location = new System.Drawing.Point(12, 89);
-            this.gbMultiMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gbMultiMon.Location = new System.Drawing.Point(9, 112);
             this.gbMultiMon.Name = "gbMultiMon";
-            this.gbMultiMon.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
-            this.gbMultiMon.Size = new System.Drawing.Size(421, 122);
-            this.gbMultiMon.TabIndex = 4;
+            this.gbMultiMon.Size = new System.Drawing.Size(337, 98);
+            this.gbMultiMon.TabIndex = 7;
             this.gbMultiMon.TabStop = false;
             this.gbMultiMon.Text = "Multiple displays";
             // 
             // cbMultiMon
             // 
             this.cbMultiMon.AutoSize = true;
-            this.cbMultiMon.Location = new System.Drawing.Point(11, 26);
-            this.cbMultiMon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbMultiMon.Location = new System.Drawing.Point(9, 21);
             this.cbMultiMon.Name = "cbMultiMon";
-            this.cbMultiMon.Size = new System.Drawing.Size(199, 20);
-            this.cbMultiMon.TabIndex = 3;
+            this.cbMultiMon.Size = new System.Drawing.Size(159, 17);
+            this.cbMultiMon.TabIndex = 0;
             this.cbMultiMon.Text = "&Show taskbar on all displays";
             this.cbMultiMon.UseVisualStyleBackColor = true;
             // 
@@ -108,53 +106,92 @@
             "Always combine, hide labels",
             "Combine when taskbar is full",
             "Never combine"});
-            this.cbxSecondaryMonitorsGroupingMode.Location = new System.Drawing.Point(11, 80);
-            this.cbxSecondaryMonitorsGroupingMode.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbxSecondaryMonitorsGroupingMode.Location = new System.Drawing.Point(9, 64);
             this.cbxSecondaryMonitorsGroupingMode.Name = "cbxSecondaryMonitorsGroupingMode";
-            this.cbxSecondaryMonitorsGroupingMode.Size = new System.Drawing.Size(399, 24);
-            this.cbxSecondaryMonitorsGroupingMode.TabIndex = 1;
+            this.cbxSecondaryMonitorsGroupingMode.Size = new System.Drawing.Size(320, 21);
+            this.cbxSecondaryMonitorsGroupingMode.TabIndex = 2;
             // 
-            // label3
+            // lblMMGroupingMode
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(8, 55);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(160, 16);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Buttons on &other taskbars:";
+            this.lblMMGroupingMode.AutoSize = true;
+            this.lblMMGroupingMode.Location = new System.Drawing.Point(6, 44);
+            this.lblMMGroupingMode.Name = "lblMMGroupingMode";
+            this.lblMMGroupingMode.Size = new System.Drawing.Size(131, 13);
+            this.lblMMGroupingMode.TabIndex = 1;
+            this.lblMMGroupingMode.Text = "Buttons on &other taskbars:";
             // 
             // btnApply
             // 
             this.btnApply.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnApply.Enabled = false;
             this.btnApply.FlatStyle = System.Windows.Forms.FlatStyle.System;
-            this.btnApply.Location = new System.Drawing.Point(340, 224);
-            this.btnApply.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btnApply.Location = new System.Drawing.Point(271, 220);
             this.btnApply.Name = "btnApply";
-            this.btnApply.Size = new System.Drawing.Size(94, 29);
-            this.btnApply.TabIndex = 5;
+            this.btnApply.Size = new System.Drawing.Size(75, 23);
+            this.btnApply.TabIndex = 8;
             this.btnApply.Text = "Apply";
             this.btnApply.UseVisualStyleBackColor = true;
             this.btnApply.Click += new System.EventHandler(this.btnApply_Click);
             // 
+            // lblExtension
+            // 
+            this.lblExtension.AutoSize = true;
+            this.lblExtension.Location = new System.Drawing.Point(6, 12);
+            this.lblExtension.Name = "lblExtension";
+            this.lblExtension.Size = new System.Drawing.Size(82, 13);
+            this.lblExtension.TabIndex = 0;
+            this.lblExtension.Text = "Extension state:";
+            // 
+            // lblExStatus
+            // 
+            this.lblExStatus.AutoSize = true;
+            this.lblExStatus.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(240)))), ((int)(((byte)(0)))));
+            this.lblExStatus.Location = new System.Drawing.Point(96, 12);
+            this.lblExStatus.Name = "lblExStatus";
+            this.lblExStatus.Size = new System.Drawing.Size(62, 13);
+            this.lblExStatus.TabIndex = 1;
+            this.lblExStatus.Text = "Not present";
+            // 
+            // btnInstall
+            // 
+            this.btnInstall.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnInstall.FlatStyle = System.Windows.Forms.FlatStyle.System;
+            this.btnInstall.Location = new System.Drawing.Point(271, 7);
+            this.btnInstall.Name = "btnInstall";
+            this.btnInstall.Size = new System.Drawing.Size(75, 23);
+            this.btnInstall.TabIndex = 2;
+            this.btnInstall.Text = "&Install";
+            this.btnInstall.UseVisualStyleBackColor = true;
+            this.btnInstall.Click += new System.EventHandler(this.btnInstall_Click);
+            // 
+            // pnlDivider
+            // 
+            this.pnlDivider.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(56)))), ((int)(((byte)(56)))), ((int)(((byte)(56)))));
+            this.pnlDivider.Location = new System.Drawing.Point(9, 39);
+            this.pnlDivider.Name = "pnlDivider";
+            this.pnlDivider.Size = new System.Drawing.Size(337, 1);
+            this.pnlDivider.TabIndex = 3;
+            // 
             // MainForm
             // 
             this.AcceptButton = this.btnApply;
-            this.AutoScaleDimensions = new System.Drawing.SizeF(120F, 120F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(96F, 96F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(25)))), ((int)(((byte)(25)))), ((int)(((byte)(25)))));
-            this.ClientSize = new System.Drawing.Size(445, 268);
-            this.Controls.Add(this.btnApply);
+            this.ClientSize = new System.Drawing.Size(356, 253);
             this.Controls.Add(this.gbMultiMon);
-            this.Controls.Add(this.cbShowLabels);
-            this.Controls.Add(this.cbxGroupingMode);
+            this.Controls.Add(this.pnlDivider);
             this.Controls.Add(this.lblGroupingMode);
+            this.Controls.Add(this.btnInstall);
+            this.Controls.Add(this.cbxGroupingMode);
+            this.Controls.Add(this.lblExStatus);
+            this.Controls.Add(this.cbShowLabels);
+            this.Controls.Add(this.btnApply);
+            this.Controls.Add(this.lblExtension);
             this.ForeColor = System.Drawing.Color.White;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.Name = "MainForm";
-            this.ShowIcon = false;
             this.Text = "Frosting Configuration";
             this.Load += new System.EventHandler(this.MainForm_Load);
             this.gbMultiMon.ResumeLayout(false);
@@ -171,9 +208,13 @@
         private System.Windows.Forms.CheckBox cbShowLabels;
         private System.Windows.Forms.GroupBox gbMultiMon;
         private System.Windows.Forms.ComboBox cbxSecondaryMonitorsGroupingMode;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblMMGroupingMode;
         private System.Windows.Forms.Button btnApply;
         private System.Windows.Forms.CheckBox cbMultiMon;
+        private System.Windows.Forms.Label lblExtension;
+        private System.Windows.Forms.Label lblExStatus;
+        private System.Windows.Forms.Button btnInstall;
+        private System.Windows.Forms.Panel pnlDivider;
     }
 }
 

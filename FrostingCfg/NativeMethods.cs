@@ -20,8 +20,26 @@ namespace FrostingCfg.NativeMethods
         [DllImport("user32.dll", ExactSpelling = true)]
         internal static unsafe extern int SetWindowCompositionAttribute(IntPtr hWnd, WINDOWCOMPOSITIONATTRIBDATA* pAttrData);
 
-        [DllImport("user32.dll", ExactSpelling = true)]
+        [DllImport("user32.dll", ExactSpelling = true, CharSet = CharSet.Unicode)]
         internal static extern int SendMessageW(IntPtr hWnd, int Msg, IntPtr wParam, IntPtr lParam);
+
+        [DllImport("user32.dll", ExactSpelling = true, CharSet = CharSet.Unicode)]
+        internal static extern IntPtr LoadIconW(IntPtr hInstance, IntPtr lpIconName);
+
+        [DllImport("user32.dll", ExactSpelling = true, CharSet = CharSet.Unicode)]
+        internal static extern IntPtr FindWindowW([MarshalAs(UnmanagedType.LPWStr)] string lpClassName, [MarshalAs(UnmanagedType.LPWStr)] string lpWindowName);
+
+        [DllImport("user32.dll", ExactSpelling = true, CharSet = CharSet.Unicode)]
+        internal static extern IntPtr PostMessageW(IntPtr hWnd, uint Msg, IntPtr wParam, IntPtr lParam);
+
+        [DllImport("user32.dll", ExactSpelling = true)]
+        internal static extern uint GetWindowThreadProcessId(IntPtr hWnd, out int lpdwProcessId);
+    }
+
+    internal static class Kernel32
+    {
+        [DllImport("kernel32.dll", ExactSpelling = true, CharSet = CharSet.Unicode)]
+        internal static extern IntPtr GetModuleHandleW([MarshalAs(UnmanagedType.LPWStr)] string lpModuleName);
     }
 
     [StructLayout(LayoutKind.Sequential)]
