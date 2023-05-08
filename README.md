@@ -13,7 +13,7 @@ The code fixing various broken or incomplete functions of the OS is located in t
 
 `FrostingCfg` is a simple UI which lets you install/uninstall the extension, as well as configure the newly enabled features that aren't yet covered by Windows's Settings app.
 
-![FrostingCfg screenshot](https://user-images.githubusercontent.com/13197516/236923117-c5beb093-f5d2-42d8-856e-aa21f1ca82a9.png)
+![FrostingCfg screenshot](https://user-images.githubusercontent.com/13197516/236929895-a2743987-11b4-4feb-8579-27484574eeca.png)
 
 # Known issues
 - Taskbar items sometimes lack icons or have outdated icons and titles if grouping is off
